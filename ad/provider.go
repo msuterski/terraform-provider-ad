@@ -3,11 +3,11 @@ package ad
 import (
 	"log"
 
-	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/hashicorp/terraform/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func Provider() terraform.ResourceProvider {
+// Provider exports the provider schema
+func Provider() *schema.Provider {
 	return &schema.Provider{
 		Schema: map[string]*schema.Schema{
 

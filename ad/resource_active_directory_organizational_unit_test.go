@@ -3,7 +3,6 @@ package ad
 import (
 	"fmt"
 	"os"
-	"strings"
 	"testing"
 
 	"github.com/hashicorp/terraform/helper/resource"
