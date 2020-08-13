@@ -1,6 +1,6 @@
 package ad
 
-import ldap "gopkg.in/ldap.v3"
+import ldap "github.com/go-ldap/ldap/v3"
 
 func addOU(OUname string, dnOfOU string, adConn *ldap.Conn, desc string) error {
 	addRequest := ldap.NewAddRequest(dnOfOU, nil) //returns Addrequest for the given DN,no attributes
